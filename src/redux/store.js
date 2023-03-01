@@ -6,7 +6,7 @@ import rootReducer from "./combineReducer";
 const persistConfig = {
     key: 'reducer',
     storage: storage,
-    whitelist: ['login' , 'book']
+    whitelist: ['login','book']
 } 
 
 const percictReducerMain = persistReducer(persistConfig, rootReducer);
