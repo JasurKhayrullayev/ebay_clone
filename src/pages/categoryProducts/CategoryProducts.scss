@@ -1,0 +1,141 @@
+.categoryProducts__shop{
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.categoryProducts__container{
+    max-width: 1028px;
+    margin: 0 auto;
+    padding: 16px 12px 0;
+}
+
+.categoryProducts__wrapper{
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 25px;
+}
+
+.categoryProducts__title{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 17px;
+}
+
+.categoryProducts__par-up{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #333333;
+    margin-top: 25px;
+}
+
+.categoryProducts__par-save{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #707070;
+    margin-top: 5px;
+}
+
+.categoryProducts__item-wrapper{
+    display: flex;
+    margin-top: 17px;
+}
+
+.categoryProducts__shop-title{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.category__item-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 17px 10px;
+    align-items: center;
+    img{
+        width: 116px;
+        height: 160px;
+        margin-bottom: 14px;
+    }
+    h3{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        text-align: center;
+        color: #333333;
+    }
+}
+
+.smilarProduct__item-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 35px;
+    p{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #111820;
+        text-align: start;
+        margin-top: 5px;
+    }
+    h5{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #111820;
+        text-align: start;
+        margin-top: 17px;
+    }
+    h3{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #707070;
+        text-align: start;
+        margin-top: 5px;
+    }
+    
+    
+}
+
+.sponsored{
+        display: flex;
+        justify-content: space-between;
+        h4{
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #707070;
+        text-align: start;
+        margin-top: 10px;
+        }
+        span{
+            color: blue;
+        }
+    }

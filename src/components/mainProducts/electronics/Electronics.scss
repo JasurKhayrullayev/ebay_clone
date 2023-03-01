@@ -1,0 +1,86 @@
+.electronics__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.electronics__title{
+    display: inline;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #191919;
+    margin-right: 39px;
+}
+
+.electronics__link{
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    color: #191919;
+}
+
+.electronics__list-wrapper{
+    display: flex;
+    max-width: 1400px;
+    gap: 24px;
+    overflow-x: scroll;
+    margin-top: 26px;
+}
+
+.electronics__item{
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    color: #191919;
+    text-align: center;
+}
+
+.electronics__item-wrapper{
+    padding-bottom: 20px;
+    img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    h3{
+        margin-top: 16px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #191919;
+        text-align: start;
+    }
+
+    p{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        color: #707070;
+    }
+}
+
+.electronic__reklama{
+    align-self: center;
+    margin-top: 80px;
+    width: 1248px;
+}
+
+.electronics__list-wrapper::-webkit-scrollbar {
+    display: none;
+  }

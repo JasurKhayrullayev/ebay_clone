@@ -1,0 +1,43 @@
+@import "reset";
+
+.container{
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.main-link{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 40px;
+  color: #767676;
+  svg{
+    font-size: 22px;
+  }
+}
+
+.transarent-link{
+  text-decoration: none;
+  color: #000;
+}
+
+.main-button{
+  padding: 1rem 2rem;
+  background-color: #002f34;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+section{
+  padding: 60px 0;
+}

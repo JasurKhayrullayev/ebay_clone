@@ -1,0 +1,24 @@
+.hero__body{
+    display: flex;
+    flex-direction: column;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.hero__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 40px;
+}
+
+.hero__brand{
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.hero__save{
+    width: 728px;
+    height: 90px;
+    align-self: center;
+    margin-bottom: 52px;
+}
