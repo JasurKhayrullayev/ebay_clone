@@ -1,11 +1,17 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React from 'react';
+import { useSelector , useDispatch} from 'react-redux';
 import { Container } from '../../utils/Components';
 import { Link } from 'react-router-dom';
-import './Basket.scss'
+import './Basket.scss';
+import {RiDeleteBin7Line} from "react-icons/ri";
+import {AiTwotoneDelete} from "react-icons/ai"
 
 const Basket = () => {
+  const dispatch = useDispatch();
   const dataInStore = useSelector(data => data);
+  const removeFromBasket = (id) => {
+    dispatch({id, type: "REMOVE_FROM_BASKET"})
+  }
   return (
     <section>
       <Container>
@@ -20,6 +26,9 @@ const Basket = () => {
                   <h1>{product.title}</h1>
                   <p>{product.description}</p>
                   <h2>${product.price}</h2>
+                  <div  className='basket__remove'>{dataInStore.book.bookedProducts.find(p => p?.id === product?.id) ? <AiTwotoneDelete onClick={() => removeFromBasket(product.id)} style={{color:"black",
+                width:30,
+                height:30}}/> : <RiDeleteBin7Line/>}</div>
                 </div>
               </article>  
             )

@@ -7,7 +7,6 @@ import ebay from "../../../assets/ebay.png"
 
 const Electronics= () => {
   const [data, isLoading] = useFetchData("categories/2/products");
-  console.log(data);
   if(isLoading){
     return <p>isloading....</p>  
   }

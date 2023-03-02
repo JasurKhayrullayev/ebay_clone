@@ -1,4 +1,5 @@
 import React , {useState} from "react";
+import "./Register.scss"
 import signIn from "../../assets/signIn.svg";
 import { Link } from "react-router-dom";
 import {FcGoogle} from "react-icons/fc"
@@ -6,7 +7,7 @@ import { instance } from "../../api/instance";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import vector from "../../assets/vector.svg";
-import './Register.scss'
+
 
 function Register() {
   const navigate = useNavigate();

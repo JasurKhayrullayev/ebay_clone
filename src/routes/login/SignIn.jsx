@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import {AiFillFacebook , AiFillApple} from "react-icons/ai"
 import {FcGoogle} from "react-icons/fc"
 import {FaPen} from "react-icons/fa"
-import {BsInfoCircle} from "react-icons/bs"
 import { instance } from '../../api/instance';
 import { useNavigate } from 'react-router-dom';
 import './SignIn.scss';
@@ -17,7 +16,6 @@ function SignIn() {
     email: "" ,
     password: ""
   })
-  console.log(userData);
   const createUser = (e) => {
     e.preventDefault();
     instance.post("/auth/login" , userData)

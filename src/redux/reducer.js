@@ -17,12 +17,17 @@ const initialState ={
   }
 
   const basketReducer = (state = basketInitialState, action) => {
-    console.log(action);
     switch(action.type){
       case "ADD_TO_BASKET":
         return {
           bookedProducts: [...state.bookedProducts, action.product]
         }
+        case "REMOVE_FROM_BASKET":
+      const indexOfDeleteProduct = state.bookedProducts.findIndex(p => p.id === action.id);
+      state.bookedProducts.splice(indexOfDeleteProduct, 1);
+      return {
+        bookedProducts: [...state.bookedProducts]
+      }
       default:
         return state
     }

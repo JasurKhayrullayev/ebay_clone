@@ -6,7 +6,6 @@ import "./Shoes.scss"
 
 const Shoes= () => {
   const [data, isLoading] = useFetchData("categories/4/products");
-  console.log(data);
   if(isLoading){
     return <p>isloading....</p>  
   }

@@ -17,7 +17,6 @@ const CategoryList = () => {
           {!isLoading ?
             data.map(({id, image, name}) => 
               {
-                console.log(id)
                 return <Link to={`/category/${id}`} className='category-item' key={id}>
                 <div className='category-item__wrapper'>
                   <img src={image} alt="" />

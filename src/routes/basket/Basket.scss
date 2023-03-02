@@ -1,5 +1,7 @@
 .basket__product-item{
     display: flex;
+    padding: 15px;
+    border: 1px solid #707070;
 }
 
 .basket__wrapper{
@@ -37,4 +39,9 @@
         line-height: 22px;
         color: #333333;
     }
+}
+
+.basket__remove{
+    margin-top: 170px;
+    margin-left: 370px;
 }

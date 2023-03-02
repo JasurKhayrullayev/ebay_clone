@@ -18,7 +18,6 @@ function CategoryProducts() {
         .get(`/categories/${id}/products`)
         .then((res) =>{
           setProduct(res.data)
-          console.log(res.data);
         })
         .catch((err)=> console.log(err));
     
